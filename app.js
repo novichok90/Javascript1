@@ -13,11 +13,10 @@ else {
 }
 
 let yosh = 17
-if (yosh >= 18) {
+if (yosh < 18) {
     console.log("Senga multfilm ko'rish mumkin")
-}
-else if (yosh <= 18) {
-    console.log("Senga jangovar ko'rish mumkin emas ")
+} else {
+    console.log("Senga jangovar kino ko'rish mumkin")
 }
 
 let harorat = 14
@@ -86,56 +85,62 @@ switch (svetofor) {
 
 let fasl = 12
 switch (fasl) {
+    case 12:
     case 1:
-        console.log("Qish")
-        break;
     case 2:
         console.log("Qish")
         break;
     case 3:
-        console.log("Bahor")
-        break;
     case 4:
-        console.log("Bahor")
-        break;
     case 5:
         console.log("Bahor")
         break;
     case 6:
-        console.log("Yoz")
-        break;
     case 7:
-        console.log("Yoz")
-        break;
     case 8:
         console.log("Yoz")
         break;
     case 9:
-        console.log("Kuz")
-        break;
     case 10:
-        console.log("Kuz")
-        break;
     case 11:
         console.log("Kuz")
         break;
-    case 12:
-        console.log("Qish")
-        break;
+    default:
+        console.log("Bunday oy yo'q")
 }
 
 let narx = 1
-switch(narx) {
-    case 1:
+switch (narx) {
+    case "olma":
         console.log("Olma: 5000 so'm")
         break;
-         case 2:
+    case "banan":
         console.log("Banan: 9000 so'm")
         break;
-         case 3:
+    case "nok":
         console.log("Nok: 8000 so'm")
         break;
-        default:
-            console.log("Bizda bunaqa meva yo'q")
+    default:
+        console.log("Bizda bunaqa meva yo'q")
+}
+
+let son1 = 10
+let son2 = 5
+let belgi = "+"
+switch (belgi) {
+    case "+":
+        console.log("Natija: " + (son1 + son2))
+        break;
+    case "-":
+        console.log("Natija: " + (son1 - son2))
+        break;
+    case "*":
+        console.log("Natija: " + (son1 * son2))
+        break;
+    case "/":
+        console.log("Natija: " + (son1 / son2))
+        break;
+    default:
+        console.log("Noma'lum belgi kiritldi!")
 }
 
